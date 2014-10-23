@@ -117,10 +117,32 @@
     </body>
 
     <script type="text/javascript">
-        var cons =document.querySelectorAll('tbody tr td a[target=_blank]');
-        for (var i in cons){
-            var con=cons[i];
-            con.
-        }
+    function openDB (name) {
+        var request=window.indexedDB.open(name,myDB.version);
+        request.onerror=function(e){
+            console.log('Open error!');
+        };
+        request.onsuccess=function(e){
+            myDB.db=e.target.result;
+            console.log('Open success!');
+        };
+    }
+
+    var myDB={
+        name:'ktxp',
+        storeName:'urls',
+        version:1,
+        db:null
+    };
+
+    openDB(myDB.name);
+
+    var cons =document.querySelectorAll('tbody tr td a[target=_blank]');
+    for (var i in cons){
+        var con=cons[i];
+        con.onclick=function(){
+            this.href;
+        };
+    }
     </script>
 </html>
