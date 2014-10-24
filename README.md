@@ -8,3 +8,5 @@ ktxp-archive
 -----
 
 浏览器需要IndexedDB支持
+
+![IndexedDB](https://raw.githubusercontent.com/silvernoo/ktxp-history/master/img/browser.png)
