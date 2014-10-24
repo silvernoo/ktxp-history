@@ -8,7 +8,3 @@ ktxp-archive
 -----
 
 浏览器需要IndexedDB支持
-
-key			|value
-------------|------
-orderBy		|顺序
